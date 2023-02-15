@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MedicoComponent } from './medico.component';
+import { MedicoService } from './medico.service';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('MedicoComponent', () => {
   let component: MedicoComponent;
@@ -9,6 +11,8 @@ describe('MedicoComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       declarations: [MedicoComponent],
+      providers: [MedicoService],
+      imports: [HttpClientModule],
     }).compileComponents();
   });
 
@@ -17,7 +21,6 @@ describe('MedicoComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-
   it('should create', () => {
     expect(component).toBeTruthy();
   });
