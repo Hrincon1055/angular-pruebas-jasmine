@@ -11,6 +11,7 @@ import { HospitalComponent } from './intermedio2/hospital/hospital.component';
 import { IncrementadorComponent } from './intermedio2/incrementador/incrementador.component';
 import { RUTAS } from './avanzado/rutas/app.routes';
 import { NavbarComponent } from './avanzado/navbar/navbar.component';
+import { RoutermedicoComponent } from './avanzado/routermedico/routermedico.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { NavbarComponent } from './avanzado/navbar/navbar.component';
     HospitalComponent,
     IncrementadorComponent,
     NavbarComponent,
+    RoutermedicoComponent,
   ],
   imports: [
     BrowserModule,

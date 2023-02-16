@@ -14,7 +14,6 @@ describe('AppComponent', () => {
    * Ejecuta cada una de las pruebas creadas
    */
   let appComponent: AppComponent;
-
   beforeEach(async () => {
     appComponent = new AppComponent(new FormBuilder());
     await TestBed.configureTestingModule({
@@ -23,13 +22,11 @@ describe('AppComponent', () => {
       schemas: [CUSTOM_ELEMENTS_SCHEMA],
     }).compileComponents();
   });
-
   it('should create the app', () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
-
   // it(`should have as title 'TRONADOR'`, () => {
   //   const fixture = TestBed.createComponent(AppComponent);
   //   const app = fixture.componentInstance;
